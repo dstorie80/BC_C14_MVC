@@ -1,3 +1,4 @@
+//create varriables
 const path = require('path');
 const express = require('express');
 const session = require('express-session');
@@ -43,7 +44,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 //routes
 app.use(routes);
 
-// turn on connection to database and server
+// turn on connection to database and server and activates server
 sequelize.sync({ force: false }).then(() => {
     app.listen(PORT, () => console.log('Now listening'));
 });

@@ -1,0 +1,38 @@
+<div class="newPostContainer" id="newPostContainer" style="display: none;">
+    <div class="newPostHeader">
+        <h1>New Post</h1>
+    </div>
+    <div class="newPostBody">
+        <form>
+            <label for="title">Title</label>
+            <br>
+            <input type="text" class="newPostTitle" id="newPostTitle" name="title">
+            <br>
+            <label for="message">Message</label>
+            <br>
+            <textarea id="message" class="newPostContent" id="newPostContent" name="message" rows="10"></textarea>
+            <br>
+            <button class="button">Submit</button>
+        </form>
+    </div>
+</div>
+<button class="button" id="newPostButton">+ New Post</button>
+<br>
+{{#if posts.length}}
+<div class="previousPostContainer" id="previousPostContainer">
+    <div class="previousPostHeader">
+        <h1>Previous Posts</h1>
+    </div>
+    <div class="previousPostBody">
+        {{#each posts}}
+        <div class="previousPost">
+            <h2>{{title}}</h2>
+            <p>{{content}}</p>
+        </div>
+        {{/each}}
+    </div>
+</div>
+{{/if}}
+
+
+

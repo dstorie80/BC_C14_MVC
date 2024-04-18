@@ -1,0 +1,25 @@
+<div class="login-container">
+    <div class="login-header">
+        <h1>Login</h1>
+    </div>
+    <div class="login-body">
+        {{#if error}}
+        <div class="error-message" style="color: red;">
+            {{error}}
+        </div>
+        {{/if}}
+        <form action="/login" method="POST">
+            <label for="username">Username</label>
+            <br>
+            <input type="text" id="username" name="username">
+            <br>
+            <label for="password">Password</label>
+            <br>
+            <input type="password" id="password" name="password">
+            <br>
+            <button class="button">Login</button>
+            <br>
+            <p>Don't have an account? <a href="/signup">Sign up</a></p>
+        </form>
+    </div>  
+</div>

@@ -1,0 +1,128 @@
+header {
+    background-color: #4e6091;
+    color: white;
+    padding: 10px;
+    text-align: Left;
+    height: 130px;
+    box-sizing: border-box;
+}
+
+header ul {
+    list-style-type: none; /* Removes bullet points */
+    display: flex; /* Makes the list items display in a row */
+    padding: 0; /* Removes the default padding */
+}
+
+header .button {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 15px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+header .button:hover {
+    background-color: #0056b3;
+}
+
+header .button:active {
+    background-color: #004080;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    height: 50px;
+  }
+  
+  nav .button {
+    margin-right: 10px;
+  }
+  
+  nav p {
+    margin-right: auto;
+    font-size: x-large;
+    font-weight: bold;
+  }
+
+.login-container, .signup-container, .newPostContainer, .previousPostContainer {
+    position: relative;
+    width: 30%;
+    margin: 100px auto 45px;
+}
+
+
+.login-header, .signup-header, .newPostHeader, .previousPostHeader {
+    background-color: #4e6091;
+    color: white;
+    margin-bottom: 0; /* Add this line */
+}
+
+
+
+.login-header h1, .signup-header h1, .newPostHeader h1, .previousPostHeader h1{
+    margin-bottom: 0; /* Add this line */
+    margin-top: 0;
+    /* padding: 10px; */
+}
+
+.login-body, .signup-body, .newPostBody, .previousPostBody {
+    border: 2px solid #4e6091;
+    margin-top: 0; /* Add this line */
+    padding: 10px;
+}
+
+.newPostContent {
+    width: 100%;
+}
+
+
+
+#username, #password, #email, #confirmPassword, #newPostTitle {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%; /* Adjust as needed */
+    height: 30px;
+}
+
+#newPostContent {
+    width: 100%;
+    height: 1000px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 15px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+.button:active {
+    background-color: #004080;
+}
+
+.signup-container {
+    position: relative;
+    width: 30%;
+    margin: 100px auto 45px;
+}
+
+
+#newPostButton {
+    position: fixed;
+    bottom: 75%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+

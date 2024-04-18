@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>The Tech Spot</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <button class="button" onclick="window.location.href = '/'">Home</button>
+            <button class="button" onclick="window.location.href = '/dashboard'">Dashboard</button>
+            {{#if logged_in}}
+                <button class="button" onclick="window.location.href = '/logout'">Logout</button>
+                <p>Welcome {{username}}!!</p>
+            {{else}}
+                <button class="button" onclick="window.location.href = '/login'">Login</button>
+            {{/if}}
+        </nav>
+        <h1>The Tech Spot!!!</h1>
+    </header>
+
+    <main>
+        {{{body}}}
+    </main>
+
+    <script src="/js/dashboard.js"></script>
+
+</body>
+</html>
